@@ -5,7 +5,7 @@ img {
   object-fit: cover;
 }
 body {
-  background-image: url("https://images.unsplash.com/photo-1740853859045-a1be9e09b40d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url("https://images.unsplash.com/photo-1741412252402-0d965ea9970b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -21,8 +21,33 @@ body {
   background-color: aliceblue;
   color: aquamarine;
   height: fit-content;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  font-size: 20px;
 }
+#right > a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+#right {
+  display: flex;
+  gap:30px ;
+  align-items: center;
+}
+#right > button {
+  background-color: rgb(19, 19, 184);
+  border: 1px solid gray;
+  font-size: 18px;
+  color: white;
+  padding:  5px 20px;
+  border-radius:  5px;
+  cursor:pointer
+}
+#right > button:hover{
+  background-color: gray;
+}
+
 #box {
   background-color: aqua;
   padding: 52px 150px;
@@ -35,4 +60,81 @@ body {
   letter-spacing: 4px;
   word-spacing: 4px;
   line-height: 50px;
+}
+#box-container {
+  background-color: aquamarine;
+}
+.box1 {
+  background-color: red;
+  height: 300px;
+  width: 300px;
+}
+.box2 {
+  background-color: blueviolet;
+  height: 300px;
+  width: 300px;
+  visibility: hidden;
+}
+.box3 {
+  background-color: orange;
+  height: 300px;
+  width: 300px;
+}
+#inline > p {
+  background-color: blueviolet;
+  font-size: 50px;
+  display: inline; /*This will make the element inline */
+}
+#block > a {
+  height: 900px;
+  width: 900px;
+  font-size: 30px;
+  color: white;
+  background-color: red;
+}
+#inline-block > span {
+  background-color: green;
+  font-size: 50px;
+  height: 20rem;
+  width: 20rem;
+  display: inline block; /* This will make the element inline-block */
+}
+/* P {
+color: red;
+font-size: 50px;
+} */
+.descendant p {
+  color: red;
+  font-size: 50px;
+}
+#texts {
+  background-color: greenyellow;
+  color: aquamarine;
+  font-size: 50px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.descendant h2:hover {
+  color: 💜;
+  font-size: 50px;
+}
+
+#flex {
+ 
+  display: flex;
+  flex-direction: row;
+  background-color: green;
+  height: 100vh;
+  width: 100vw;
+  justify-content: last baseline;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#flex > p {
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+  color: black;
 }
